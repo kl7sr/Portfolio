@@ -170,6 +170,14 @@ h1 {
     background: linear-gradient(45deg, #141E30, #243B55);
 }
 
+.bg-gradient-linkedin {
+    background: linear-gradient(45deg, #0077b5, #00a0dc);
+}
+
+.bg-gradient-instagram {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+}
+
 .card-icon {
     font-size: 3rem;
     color: rgba(255, 255, 255, 0.1);
