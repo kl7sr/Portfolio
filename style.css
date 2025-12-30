@@ -178,6 +178,27 @@ h1 {
     background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
 }
 
+.bg-gradient-bookstore {
+    background: linear-gradient(45deg, #0b0c10, #1f2833);
+    border-bottom: 2px solid #66fcf1;
+    /* Accent color strip */
+}
+
+/* Custom hover for bookstore icon */
+.project-card:hover .fa-book {
+    color: #66fcf1 !important;
+}
+
+.bg-gradient-candy {
+    background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+    border-bottom: 2px solid #ff6b6b;
+}
+
+/* Custom hover for candy store icon */
+.project-card:hover .fa-store {
+    color: #ff6b6b !important;
+}
+
 .card-icon {
     font-size: 3rem;
     color: rgba(255, 255, 255, 0.1);
