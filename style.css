@@ -199,6 +199,16 @@ h1 {
     color: #ff6b6b !important;
 }
 
+.bg-gradient-sugar {
+    background: linear-gradient(45deg, #1A4D2E, #2d5f3f);
+    border-bottom: 2px solid #D4A574;
+}
+
+/* Custom hover for cookie icon */
+.project-card:hover .fa-cookie-bite {
+    color: #D4A574 !important;
+}
+
 .card-icon {
     font-size: 3rem;
     color: rgba(255, 255, 255, 0.1);
