@@ -39,4 +39,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(style);
+
+    function createParticles() {
+        const container = document.getElementById('particles-container');
+        if (!container) return;
+
+        const particleCount = 30;
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+
+            const size = Math.random() * 8 + 4;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.animationDelay = `${Math.random() * 12}s`;
+            particle.style.animationDuration = `${8 + Math.random() * 12}s`;
+
+            container.appendChild(particle);
+        }
+    }
+
+    createParticles();
 });
