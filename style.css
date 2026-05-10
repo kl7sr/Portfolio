@@ -231,7 +231,15 @@ h1 {
     overflow: hidden;
 }
 
-#particles-container {
+.bg-gradient-seaal {
+    background: #FFFFFF;
+    border-bottom: 2px solid #003399;
+    position: relative;
+    overflow: hidden;
+}
+
+#particles-container,
+#water-particles-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -270,6 +278,69 @@ h1 {
         transform: translateY(-250px) translateX(30px) scale(0.2);
         opacity: 0;
     }
+}
+
+.water-particle {
+    position: absolute;
+    background: rgba(0, 51, 153, 0.6);
+    border-radius: 50%;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: bubble-rise 8s infinite ease-in;
+}
+
+@keyframes bubble-rise {
+    0% {
+        transform: translateY(0) translateX(0) scale(0.5);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.9;
+    }
+
+    80% {
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateY(var(--target-y, -250px)) translateX(var(--target-x, 20px)) scale(0.8);
+        opacity: 0;
+    }
+}
+
+.seaal-content-wrapper {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.seaal-grade {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #003399;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.project-card:hover .seaal-grade {
+    transform: scale(1.1);
+    color: #009933;
+}
+
+.seaal-logo {
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    transition: transform 0.5s ease;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.project-card:hover .seaal-logo {
+    transform: scale(1.1);
 }
 
 .arabic-glow {
