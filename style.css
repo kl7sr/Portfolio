@@ -239,7 +239,7 @@ h1 {
 }
 
 .bg-gradient-weaver {
-    background: #000000;
+    background: radial-gradient(circle at 50% 20%, #350000 0%, #0c0000 80%, #000000 100%) !important;
     border-bottom: 2px solid #8B0000;
     position: relative;
     overflow: hidden;
@@ -351,15 +351,16 @@ h1 {
 }
 
 .weaver-logo {
-    width: 140px;
-    z-index: 1;
+    width: 90px !important;
+    height: 90px !important;
+    z-index: 2;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     object-fit: contain;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.15)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.05));
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.1));
 }
 
 .project-card:hover .weaver-logo {
-    transform: scale(1.08);
+    transform: scale(1.08) rotate(-1deg);
 }
 
 .arabic-glow {
