@@ -238,6 +238,13 @@ h1 {
     overflow: hidden;
 }
 
+.bg-gradient-weaver {
+    background: #000000;
+    border-bottom: 2px solid #8B0000;
+    position: relative;
+    overflow: hidden;
+}
+
 #particles-container,
 #water-particles-container {
     position: absolute;
@@ -341,6 +348,18 @@ h1 {
 
 .project-card:hover .seaal-logo {
     transform: scale(1.1);
+}
+
+.weaver-logo {
+    width: 140px;
+    z-index: 1;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.15)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.05));
+}
+
+.project-card:hover .weaver-logo {
+    transform: scale(1.08);
 }
 
 .arabic-glow {
