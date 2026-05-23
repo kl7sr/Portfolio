@@ -250,7 +250,7 @@ h1 {
 
 .bg-gradient-weaver {
     background: radial-gradient(circle at 50% 20%, #350000 0%, #0c0000 80%, #000000 100%) !important;
-    border-bottom: 2px solid #8B0000;
+    border-bottom: 2px solid #ff003c;
     position: relative;
     overflow: hidden;
 }
@@ -366,6 +366,7 @@ h1 {
     z-index: 2;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     object-fit: contain;
+    mix-blend-mode: screen;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.25)) drop-shadow(0 0 25px rgba(255, 255, 255, 0.1));
 }
 
