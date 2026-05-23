@@ -151,7 +151,7 @@ h1 {
     background: var(--card-bg);
     border-radius: 16px;
     overflow: hidden;
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.05);
     height: 100%;
     display: flex;
@@ -159,9 +159,19 @@ h1 {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) !important;
     background: var(--card-hover);
     border-color: rgba(255, 255, 255, 0.1);
+}
+
+.project-card:active {
+    transform: translateY(-2px) scale(0.98) !important;
+    transition: transform 0.1s ease;
+}
+
+.btn:active, .text-link:active {
+    transform: scale(0.96);
+    transition: transform 0.1s ease;
 }
 
 .card-image {
@@ -361,6 +371,44 @@ h1 {
 
 .project-card:hover .weaver-logo {
     transform: scale(1.08) rotate(-1deg);
+}
+
+/* Weaver Card Specific Styling */
+.weaver-card {
+    background: #000000 !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.weaver-card:hover {
+    background: var(--card-hover) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.weaver-card h3 {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.weaver-card p {
+    color: #ffffff;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.veins-background {
+    position: absolute;
+    inset: 0;
+    background: url('veins.png') center/cover no-repeat;
+    opacity: 0.12;
+    mix-blend-mode: color-dodge;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1;
+}
+
+.project-card:hover .veins-background {
+    opacity: 0.22;
+    transform: scale(1.05);
 }
 
 .arabic-glow {
