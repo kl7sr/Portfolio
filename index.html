@@ -9,29 +9,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Amiri:wght@400;700&family=Jost:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=1.2">
+    <link rel="stylesheet" href="style.css?v=2.4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <div class="ambient-glow"></div>
+    <div class="ambient-glow-two"></div>
 
-    <header class="hero">
+    <div class="rotary-nav intro-state">
+        <span class="rotary-label" id="rotaryLabel">Home</span>
+        <div class="rotary-wheel-container" id="rotaryContainer">
+            <div class="rotary-wheel" id="rotaryWheel">
+                <!-- Revolver Chambers with Icons -->
+                <div class="rotary-chamber chamber-0" title="Home"><i class="fas fa-home"></i></div>
+                <div class="rotary-chamber chamber-1" title="About"><i class="fas fa-user"></i></div>
+                <div class="rotary-chamber chamber-2" title="Resume"><i class="fas fa-file-alt"></i></div>
+                <div class="rotary-chamber chamber-3" title="Apps"><i class="fas fa-mobile-alt"></i></div>
+                <div class="rotary-chamber chamber-4" title="Websites"><i class="fas fa-globe"></i></div>
+                <div class="rotary-chamber chamber-5" title="Connect"><i class="fas fa-share-alt"></i></div>
+                <div class="rotary-center">
+                    <span class="logo-k">K</span>
+                    <span class="logo-text">l7sr</span>
+                    <div class="cyber-eyelid">
+                        <div class="eye-lid-top"></div>
+                        <div class="eye-lid-bottom"></div>
+                        <div class="eye-pupil"></div>
+                    </div>
+                    <div class="center-icon-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="hero" id="hero">
         <div class="hero-content">
             <h1 class="fade-in">Just building <span class="gradient-text">cool stuff</span></h1>
             <p class="fade-in delay-1">I write code and make things look good on the internet</p>
-            <a href="#projects" class="btn primary-btn fade-in delay-2">See my work</a>
+            <a href="#apps" class="btn primary-btn fade-in delay-2">See my work</a>
         </div>
     </header>
 
-    <section id="projects" class="projects-section">
-        <h2 class="section-title">Projects</h2>
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Hi, I'm <span class="highlight-text">Oubbad Hicham</span> (also known as <span class="highlight-text">kl7sr</span>), a Web Designer and Frontend Developer specializing in building highperformance, responsive web applications. I focus on creating immersive digital products using <span class="highlight-text">HTML</span>, <span class="highlight-text">CSS</span>, <span class="highlight-text">JavaScript</span>, <span class="highlight-text">React</span>, and <span class="highlight-text">Next.js</span>, styled with modern CSS architectures and <span class="highlight-text">Tailwind CSS</span>.</p>
+                <p>On the backend, I have experience working with <span class="highlight-text">Laravel</span>, <span class="highlight-text">PHP</span>, and <span class="highlight-text">SQL</span> databases to build complete full-stack web applications. I love turning complex wireframes and user requirements into polished, user-centric web platforms, always pushing for clean code, seamless animations, and top-tier user experiences.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <span class="stat-number">18.5/20</span>
+                    <span class="stat-label">Graduation Project Grade</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Web Projects Built</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3 class="subsection-title"><i class="fas fa-th-large"></i> My Apps</h3>
+    <section id="resume" class="resume-section">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-container">
+            <div class="resume-column">
+                <h3 class="resume-subtitle"><i class="fas fa-briefcase"></i> Experience</h3>
+                <div class="resume-timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">Late 2025 - Early 2026</span>
+                        <h4 class="timeline-title">Graduation Intern — Web Development</h4>
+                        <p class="timeline-desc">Engineered and built the SEAAL Management System. Designed, coded, and integrated the full database and frontend layouts (graduating mark: 18.5/20).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-column">
+                <h3 class="resume-subtitle"><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="resume-timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">2023 - 2026</span>
+                        <h4 class="timeline-title">TS Web Development Degree</h4>
+                        <p class="timeline-desc">INSFP Boucenna Mohamed Tayeb. Intensive technical studies in web development architectures, covering HTML, CSS, JavaScript, and associated toolsets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apps" class="projects-section">
+        <h2 class="section-title">My Apps</h2>
         <div class="projects-grid">
-            <article class="project-card">
+            <article class="project-card" data-icon="fas fa-tint" data-color="#003399">
                 <div class="card-image bg-gradient-seaal">
                     <div class="overlay"></div>
                     <div id="water-particles-container"></div>
@@ -49,7 +119,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project-card">
+            <article class="project-card" data-icon="fas fa-book-open" data-color="#D4AF37">
                 <div class="card-image bg-gradient-linakhtem">
                     <div class="overlay"></div>
                     <div id="particles-container"></div>
@@ -64,10 +134,7 @@
                     </div>
                 </div>
             </article>
-
-
-
-            <article class="project-card">
+            <article class="project-card" data-icon="fab fa-android" data-color="#3DDC84">
                 <div class="card-image bg-gradient-code">
                     <div class="overlay"></div>
                     <i class="fab fa-android card-icon"></i>
@@ -81,10 +148,12 @@
                 </div>
             </article>
         </div>
+    </section>
 
-        <h3 class="subsection-title"><i class="fas fa-globe"></i> Websites</h3>
+    <section id="websites" class="projects-section">
+        <h2 class="section-title">Websites</h2>
         <div class="projects-grid">
-            <article class="project-card weaver-card">
+            <article class="project-card weaver-card" data-icon="fas fa-project-diagram" data-color="#ff003c">
                 <div class="card-image bg-gradient-weaver">
                     <div class="overlay"></div>
                     <img src="main-logo.png" alt="Weaver Logo" class="weaver-logo">
@@ -100,8 +169,7 @@
                     </div>
                 </div>
             </article>
-
-            <article class="project-card">
+            <article class="project-card" data-icon="fas fa-book" data-color="#66fcf1">
                 <div class="card-image bg-gradient-bookstore">
                     <div class="overlay"></div>
                     <i class="fas fa-book card-icon"></i>
@@ -115,8 +183,7 @@
                     </div>
                 </div>
             </article>
-
-            <article class="project-card">
+            <article class="project-card" data-icon="fas fa-cookie-bite" data-color="#D4A574">
                 <div class="card-image bg-gradient-sugar">
                     <div class="overlay"></div>
                     <i class="fas fa-cookie-bite card-icon"></i>
@@ -130,8 +197,7 @@
                     </div>
                 </div>
             </article>
-
-            <article class="project-card">
+            <article class="project-card" data-icon="fas fa-code" data-color="#7c4dff">
                 <div class="card-image bg-gradient-code">
                     <div class="overlay"></div>
                     <i class="fas fa-code card-icon"></i>
@@ -150,7 +216,7 @@
     <section id="connect" class="connect-section">
         <h2 class="section-title">Connect</h2>
         <div class="connect-grid">
-            <article class="project-card">
+            <article class="project-card" data-icon="fab fa-github" data-color="#243B55">
                 <div class="card-image bg-gradient-git">
                     <div class="overlay"></div>
                     <i class="fab fa-github card-icon"></i>
@@ -164,8 +230,7 @@
                     </div>
                 </div>
             </article>
-
-            <article class="project-card">
+            <article class="project-card" data-icon="fab fa-linkedin" data-color="#0077b5">
                 <div class="card-image bg-gradient-linkedin">
                     <div class="overlay"></div>
                     <i class="fab fa-linkedin card-icon"></i>
@@ -179,8 +244,7 @@
                     </div>
                 </div>
             </article>
-
-            <article class="project-card">
+            <article class="project-card" data-icon="fab fa-instagram" data-color="#fd1d1d">
                 <div class="card-image bg-gradient-instagram">
                     <div class="overlay"></div>
                     <i class="fab fa-instagram card-icon"></i>
@@ -197,11 +261,27 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 All rights reserved</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <span class="footer-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:anisoubad792@gmail.com">anisoubad792@gmail.com</a>
+                </span>
+                <span class="footer-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0542258712">0542258712</a>
+                </span>
+                <span class="footer-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Birtouta, Alger, Algérie</span>
+                </span>
+            </div>
+            <p class="copyright">&copy; 2025 All rights reserved</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2.6"></script>
 </body>
 
 </html>
