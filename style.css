@@ -1005,7 +1005,7 @@ h1 {
         font-size: 2.5rem;
     }
     header.hero {
-        display: none;
+        display: none !important;
     }
 }
 
