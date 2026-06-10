@@ -1190,4 +1190,78 @@ h1 {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+}
+
+/* Mobile Navigation Side Scroller styling */
+.mobile-nav-bar {
+    display: none; /* Hidden on desktop */
+}
+
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 60px; /* Offset smooth scrolls so headers are not covered */
+    }
+
+    .rotary-nav {
+        display: none !important; /* Completely hide revolver dial and logo on mobile */
+    }
+
+    .mobile-nav-bar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1100;
+        background: rgba(5, 5, 5, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .mobile-scroll-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        padding: 0.85rem 1.2rem;
+        gap: 1.8rem;
+        align-items: center;
+    }
+
+    /* Hide scrollbars for Chrome, Safari, and Opera */
+    .mobile-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbars for IE, Edge, and Firefox */
+    .mobile-scroll-container {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .mobile-nav-item {
+        font-family: var(--font-heading);
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #777;
+        text-decoration: none;
+        white-space: nowrap;
+        padding-bottom: 4px;
+        border-bottom: 2px solid transparent;
+        transition: color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .mobile-nav-item:hover {
+        color: #fff;
+    }
+
+    .mobile-nav-item.active {
+        color: var(--accent-secondary);
+        border-bottom-color: var(--accent-secondary);
+        text-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+    }
 }

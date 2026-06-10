@@ -401,6 +401,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     chambers.forEach((ch, idx) => {
                         ch.classList.toggle('active', idx === activeIdx);
                     });
+
+                    // Update mobile navigation items
+                    const mobileItems = document.querySelectorAll('.mobile-nav-item');
+                    mobileItems.forEach(item => {
+                        const isCurrent = item.getAttribute('data-section') === sectionId;
+                        item.classList.toggle('active', isCurrent);
+                        if (isCurrent) {
+                            item.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        }
+                    });
                 }
             });
         }, sectionObserverOptions);
