@@ -1005,7 +1005,72 @@ h1 {
         font-size: 2.5rem;
     }
     header.hero {
-        display: none !important;
+        height: auto;
+        min-height: 80vh;
+        padding: 4rem 1.5rem;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .projects-grid,
+    .connect-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.8rem !important;
+    }
+    .project-card {
+        border-radius: 12px;
+    }
+    .card-image {
+        height: 120px !important;
+    }
+    .card-content {
+        padding: 0.8rem !important;
+    }
+    .card-content h3 {
+        font-size: 1rem !important;
+        margin-bottom: 0.3rem !important;
+    }
+    .card-content p {
+        font-size: 0.78rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+    .text-link {
+        font-size: 0.78rem !important;
+    }
+    .seaal-logo {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .seaal-grade {
+        font-size: 0.9rem !important;
+    }
+    .arabic-glow {
+        font-size: 2.2rem !important;
+    }
+    .weaver-logo {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .card-icon {
+        font-size: 2rem !important;
+    }
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: none !important;
+        gap: 1rem !important;
+    }
+    .stat-card {
+        padding: 1rem !important;
+    }
+    .stat-number {
+        font-size: 1.8rem !important;
     }
 }
 
@@ -1202,7 +1267,7 @@ h1 {
 
 @media (max-width: 768px) {
     html {
-        scroll-padding-top: 60px; /* Offset smooth scrolls so headers are not covered */
+        scroll-padding-top: 0; /* Offset smooth scrolls so headers are not covered */
     }
 
     .rotary-nav {
@@ -1210,17 +1275,7 @@ h1 {
     }
 
     .mobile-nav-bar {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1100;
-        background: rgba(5, 5, 5, 0.8);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        display: none !important;
     }
 
     .mobile-scroll-container {
