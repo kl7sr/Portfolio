@@ -1055,11 +1055,11 @@ h1 {
     header.hero {
         height: 100vh;
         height: 100dvh;
-        padding: 0 1.5rem;
         display: flex !important;
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding: 0 1.5rem;
     }
     header.hero .btn.primary-btn {
         display: none !important;
