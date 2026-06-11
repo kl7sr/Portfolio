@@ -1115,16 +1115,9 @@ h1 {
     .card-icon {
         font-size: 2rem !important;
     }
-    .about-stats {
-        grid-template-columns: repeat(2, 1fr) !important;
-        grid-template-rows: none !important;
-        gap: 1rem !important;
-    }
-    .stat-card {
-        padding: 1rem !important;
-    }
-    .stat-number {
-        font-size: 1.8rem !important;
+    .resume-container {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
     }
 }
 
