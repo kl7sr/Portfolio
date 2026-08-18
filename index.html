@@ -9,16 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Amiri:wght@400;700&family=Jost:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=2.5">
+    <link rel="stylesheet" href="style.css?v=8.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="ambient-glow"></div>
-    <div class="ambient-glow-two"></div>
-
     <nav class="mobile-nav-bar">
         <div class="mobile-scroll-container">
             <a href="#hero" class="mobile-nav-item active" data-section="hero">Home</a>
@@ -30,6 +27,7 @@
         </div>
     </nav>
 
+    <!-- Revolver Quick-Nav Dock anchored to the side of the screen -->
     <div class="rotary-nav intro-state">
         <span class="rotary-label" id="rotaryLabel">Home</span>
         <div class="rotary-wheel-container" id="rotaryContainer">
@@ -55,8 +53,9 @@
         </div>
     </div>
 
+    <!-- 1. HERO SECTION (White Background, Fullscreen, Left-Aligned) -->
     <header class="hero" id="hero">
-        <div class="hero-content">
+        <div class="section-container hero-content">
             <h1 class="fade-in">Just building <span class="gradient-text">cool stuff</span></h1>
             <p class="fade-in delay-1">I write code and make things look good on the internet</p>
             <a href="#apps" class="btn primary-btn fade-in delay-2">See my work</a>
@@ -67,217 +66,232 @@
         </div>
     </header>
 
+    <!-- 2. ABOUT ME SECTION (Light Gray Tone #F7F7FA) -->
     <section id="about" class="about-section">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p>Hi, I'm <span class="highlight-text">Oubbad Hicham</span> (also known as <span class="highlight-text">kl7sr</span>), a Web Designer and Frontend Developer specializing in building highperformance, responsive web applications. I focus on creating immersive digital products using <span class="highlight-text">HTML</span>, <span class="highlight-text">CSS</span>, <span class="highlight-text">JavaScript</span>, <span class="highlight-text">React</span>, and <span class="highlight-text">Next.js</span>, styled with modern CSS architectures and <span class="highlight-text">Tailwind CSS</span>.</p>
-                <p>On the backend, I have experience working with <span class="highlight-text">Laravel</span>, <span class="highlight-text">PHP</span>, and <span class="highlight-text">SQL</span> databases to build complete full-stack web applications. I love turning complex wireframes and user requirements into polished, user-centric web platforms, always pushing for clean code, seamless animations, and top-tier user experiences.</p>
-            </div>
-            <div class="about-stats">
-                <div class="stat-card">
-                    <span class="stat-number">18.5/20</span>
-                    <span class="stat-label">Graduation Project Grade</span>
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Hi, I'm <span class="highlight-text">Oubbad Hicham</span> (also known as <span class="highlight-text">kl7sr</span>), a Web Designer and Frontend Developer specializing in building highperformance, responsive web applications. I focus on creating immersive digital products using <span class="highlight-text">HTML</span>, <span class="highlight-text">CSS</span>, <span class="highlight-text">JavaScript</span>, <span class="highlight-text">React</span>, and <span class="highlight-text">Next.js</span>, styled with modern CSS architectures and <span class="highlight-text">Tailwind CSS</span>.</p>
+                    <p>On the backend, I have experience working with <span class="highlight-text">Laravel</span>, <span class="highlight-text">PHP</span>, and <span class="highlight-text">SQL</span> databases to build complete full-stack web applications. I love turning complex wireframes and user requirements into polished, user-centric web platforms, always pushing for clean code, seamless animations, and top-tier user experiences.</p>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Web Projects Built</span>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">18.5/20</span>
+                        <span class="stat-label">Graduation Project Grade</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Web Projects Built</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- 3. RESUME SECTION (White Background) -->
     <section id="resume" class="resume-section">
-        <h2 class="section-title">Resume</h2>
-        <div class="resume-container">
-            <div class="resume-column">
-                <h3 class="resume-subtitle"><i class="fas fa-briefcase"></i> Experience</h3>
-                <div class="resume-timeline">
-                    <div class="timeline-item">
-                        <span class="timeline-date">Late 2025 - Early 2026</span>
-                        <h4 class="timeline-title">Graduation Intern — Web Development</h4>
-                        <p class="timeline-desc">Engineered and built the SEAAL Management System. Designed, coded, and integrated the full database and frontend layouts (graduating mark: 18.5/20).</p>
+        <div class="section-container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-container">
+                <div class="resume-column">
+                    <h3 class="resume-subtitle"><i class="fas fa-briefcase"></i> Experience</h3>
+                    <div class="resume-timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-date">Late 2025 - Early 2026</span>
+                            <h4 class="timeline-title">Graduation Intern — Web Development</h4>
+                            <p class="timeline-desc">Engineered and built the SEAAL Management System. Designed, coded, and integrated the full database and frontend layouts (graduating mark: 18.5/20).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-column">
+                    <h3 class="resume-subtitle"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="resume-timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-date">2023 - 2026</span>
+                            <h4 class="timeline-title">TS Web Development Degree</h4>
+                            <p class="timeline-desc">INSFP Boucenna Mohamed Tayeb. Intensive technical studies in web development architectures, covering HTML, CSS, JavaScript, and associated toolsets.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="resume-column">
-                <h3 class="resume-subtitle"><i class="fas fa-graduation-cap"></i> Education</h3>
-                <div class="resume-timeline">
-                    <div class="timeline-item">
-                        <span class="timeline-date">2023 - 2026</span>
-                        <h4 class="timeline-title">TS Web Development Degree</h4>
-                        <p class="timeline-desc">INSFP Boucenna Mohamed Tayeb. Intensive technical studies in web development architectures, covering HTML, CSS, JavaScript, and associated toolsets.</p>
+        </div>
+    </section>
+
+    <!-- 4. APPS SECTION (Light Gray Tone #F7F7FA, Themed Custom Card Headers) -->
+    <section id="apps" class="projects-section apps-section">
+        <div class="section-container">
+            <h2 class="section-title">My Apps</h2>
+            <div class="projects-grid">
+                <article class="project-card" data-icon="fas fa-tint" data-color="#003399">
+                    <div class="card-image bg-gradient-seaal">
+                        <div class="overlay"></div>
+                        <div id="water-particles-container"></div>
+                        <div class="seaal-content-wrapper">
+                            <img src="seaal_logo.jpg" alt="SEAAL Logo" class="seaal-logo">
+                            <div class="seaal-grade">18.5 / 20</div>
+                        </div>
                     </div>
-                </div>
+                    <div class="card-content">
+                        <h3>SEAAL Management System</h3>
+                        <p>My soutenance project for SEAAL</p>
+                        <div class="card-links">
+                            <a href="https://project-sotnounce-final.vercel.app/" target="_blank" class="text-link">Visit
+                                App <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-icon="fas fa-book-open" data-color="#D4AF37">
+                    <div class="card-image bg-gradient-linakhtem">
+                        <div class="overlay"></div>
+                        <div id="particles-container"></div>
+                        <div class="arabic-glow">لِنَخْتِمْ</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>LiNakhtem</h3>
+                        <p>Your companion for completing the Holy Quran during Ramadan</p>
+                        <div class="card-links">
+                            <a href="https://linakhtem.netlify.app/" target="_blank" class="text-link">Download App <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-icon="fab fa-android" data-color="#3DDC84">
+                    <div class="card-image bg-gradient-code">
+                        <div class="overlay"></div>
+                        <i class="fab fa-android card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Future App</h3>
+                        <p>Innovation in progress</p>
+                        <div class="card-links">
+                            <span class="disabled-link">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <section id="apps" class="projects-section">
-        <h2 class="section-title">My Apps</h2>
-        <div class="projects-grid">
-            <article class="project-card" data-icon="fas fa-tint" data-color="#003399">
-                <div class="card-image bg-gradient-seaal">
-                    <div class="overlay"></div>
-                    <div id="water-particles-container"></div>
-                    <div class="seaal-content-wrapper">
-                        <img src="seaal_logo.jpg" alt="SEAAL Logo" class="seaal-logo">
-                        <div class="seaal-grade">18.5 / 20</div>
+    <!-- 5. WEBSITES SECTION (White Background, Themed Custom Card Headers) -->
+    <section id="websites" class="projects-section websites-section">
+        <div class="section-container">
+            <h2 class="section-title">Websites</h2>
+            <div class="projects-grid">
+                <article class="project-card weaver-card" data-icon="fas fa-project-diagram" data-color="#ff003c">
+                    <div class="card-image bg-gradient-weaver">
+                        <div class="overlay"></div>
+                        <img src="main-logo.png" alt="Weaver Logo" class="weaver-logo">
+                        <div class="veins-background"></div>
                     </div>
-                </div>
-                <div class="card-content">
-                    <h3>SEAAL Management System</h3>
-                    <p>My soutenance project for SEAAL</p>
-                    <div class="card-links">
-                        <a href="https://project-sotnounce-final.vercel.app/" target="_blank" class="text-link">Visit
-                            App <i class="fas fa-arrow-right"></i></a>
+                    <div class="card-content">
+                        <h3>Weaver.dz</h3>
+                        <p>Turning chaos into art</p>
+                        <div class="card-links">
+                            <a href="https://weaver-dz.vercel.app/" target="_blank" class="text-link">Visit Site <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="project-card" data-icon="fas fa-book-open" data-color="#D4AF37">
-                <div class="card-image bg-gradient-linakhtem">
-                    <div class="overlay"></div>
-                    <div id="particles-container"></div>
-                    <div class="arabic-glow">لِنَخْتِمْ</div>
-                </div>
-                <div class="card-content">
-                    <h3>LiNakhtem</h3>
-                    <p>Your companion for completing the Holy Quran during Ramadan</p>
-                    <div class="card-links">
-                        <a href="https://linakhtem.netlify.app/" target="_blank" class="text-link">Download App <i
-                                class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="project-card" data-icon="fas fa-book" data-color="#66fcf1">
+                    <div class="card-image bg-gradient-bookstore">
+                        <div class="overlay"></div>
+                        <i class="fas fa-book card-icon"></i>
                     </div>
-                </div>
-            </article>
-            <article class="project-card" data-icon="fab fa-android" data-color="#3DDC84">
-                <div class="card-image bg-gradient-code">
-                    <div class="overlay"></div>
-                    <i class="fab fa-android card-icon"></i>
-                </div>
-                <div class="card-content">
-                    <h3>Future App</h3>
-                    <p>Innovation in progress</p>
-                    <div class="card-links">
-                        <span class="disabled-link">Coming Soon</span>
+                    <div class="card-content">
+                        <h3>Kl7sr.Archive</h3>
+                        <p>book store</p>
+                        <div class="card-links">
+                            <a href="https://kl7srarchive.netlify.app/" target="_blank" class="text-link">Visit Site <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+                <article class="project-card" data-icon="fas fa-cookie-bite" data-color="#D4A574">
+                    <div class="card-image bg-gradient-sugar">
+                        <div class="overlay"></div>
+                        <i class="fas fa-cookie-bite card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sugar Story</h3>
+                        <p>Handmade cookies with love</p>
+                        <div class="card-links">
+                            <a href="https://sugarstory.netlify.app/" target="_blank" class="text-link">Visit Site <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-icon="fas fa-code" data-color="#7c4dff">
+                    <div class="card-image bg-gradient-code">
+                        <div class="overlay"></div>
+                        <i class="fas fa-code card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Work in Progress</h3>
+                        <p>Cooking up the next big thing</p>
+                        <div class="card-links">
+                            <span class="disabled-link">Coming Soon</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
-    <section id="websites" class="projects-section">
-        <h2 class="section-title">Websites</h2>
-        <div class="projects-grid">
-            <article class="project-card weaver-card" data-icon="fas fa-project-diagram" data-color="#ff003c">
-                <div class="card-image bg-gradient-weaver">
-                    <div class="overlay"></div>
-                    <img src="main-logo.png" alt="Weaver Logo" class="weaver-logo">
-                    <!-- Veins decorative pattern in background -->
-                    <div class="veins-background"></div>
-                </div>
-                <div class="card-content">
-                    <h3>Weaver.dz</h3>
-                    <p>Turning chaos into art</p>
-                    <div class="card-links">
-                        <a href="https://weaver-dz.vercel.app/" target="_blank" class="text-link">Visit Site <i
-                                class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card" data-icon="fas fa-book" data-color="#66fcf1">
-                <div class="card-image bg-gradient-bookstore">
-                    <div class="overlay"></div>
-                    <i class="fas fa-book card-icon"></i>
-                </div>
-                <div class="card-content">
-                    <h3>Kl7sr.Archive</h3>
-                    <p>book store</p>
-                    <div class="card-links">
-                        <a href="https://kl7srarchive.netlify.app/" target="_blank" class="text-link">Visit Site <i
-                                class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card" data-icon="fas fa-cookie-bite" data-color="#D4A574">
-                <div class="card-image bg-gradient-sugar">
-                    <div class="overlay"></div>
-                    <i class="fas fa-cookie-bite card-icon"></i>
-                </div>
-                <div class="card-content">
-                    <h3>Sugar Story</h3>
-                    <p>Handmade cookies with love</p>
-                    <div class="card-links">
-                        <a href="https://sugarstory.netlify.app/" target="_blank" class="text-link">Visit Site <i
-                                class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card" data-icon="fas fa-code" data-color="#7c4dff">
-                <div class="card-image bg-gradient-code">
-                    <div class="overlay"></div>
-                    <i class="fas fa-code card-icon"></i>
-                </div>
-                <div class="card-content">
-                    <h3>Work in Progress</h3>
-                    <p>Cooking up the next big thing</p>
-                    <div class="card-links">
-                        <span class="disabled-link">Coming Soon</span>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </section>
-
+    <!-- 6. CONNECT SECTION (Light Gray Tone #F7F7FA, Clean Unified Social Styling) -->
     <section id="connect" class="connect-section">
-        <h2 class="section-title">Connect</h2>
-        <div class="connect-grid">
-            <article class="project-card" data-icon="fab fa-github" data-color="#243B55">
-                <div class="card-image bg-gradient-git">
-                    <div class="overlay"></div>
-                    <i class="fab fa-github card-icon"></i>
-                </div>
-                <div class="card-content">
-                    <h3>GitHub</h3>
-                    <p>Where I push my code</p>
-                    <div class="card-links">
-                        <a href="https://github.com/kl7sr" target="_blank" class="text-link">Profile <i
-                                class="fas fa-arrow-right"></i></a>
+        <div class="section-container">
+            <h2 class="section-title">Connect</h2>
+            <div class="connect-grid">
+                <article class="project-card" data-icon="fab fa-github" data-color="#5B0AEF">
+                    <div class="card-image bg-gradient-git">
+                        <div class="overlay"></div>
+                        <i class="fab fa-github card-icon"></i>
                     </div>
-                </div>
-            </article>
-            <article class="project-card" data-icon="fab fa-linkedin" data-color="#0077b5">
-                <div class="card-image bg-gradient-linkedin">
-                    <div class="overlay"></div>
-                    <i class="fab fa-linkedin card-icon"></i>
-                </div>
-                <div class="card-content">
-                    <h3>LinkedIn</h3>
-                    <p>Let's connect professionally</p>
-                    <div class="card-links">
-                        <a href="https://www.linkedin.com/in/hicham-oubbad-540a98327/" target="_blank"
-                            class="text-link">Connect <i class="fas fa-arrow-right"></i></a>
+                    <div class="card-content">
+                        <h3>GitHub</h3>
+                        <p>Where I push my code</p>
+                        <div class="card-links">
+                            <a href="https://github.com/kl7sr" target="_blank" class="text-link">Profile <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="project-card" data-icon="fab fa-instagram" data-color="#fd1d1d">
-                <div class="card-image bg-gradient-instagram">
-                    <div class="overlay"></div>
-                    <i class="fab fa-instagram card-icon"></i>
-                </div>
-                <div class="card-content">
-                    <h3>Instagram</h3>
-                    <p>My life outside the terminal</p>
-                    <div class="card-links">
-                        <a href="https://instagram.com/kl7sr" target="_blank" class="text-link">Profile <i
-                                class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="project-card" data-icon="fab fa-linkedin" data-color="#5B0AEF">
+                    <div class="card-image bg-gradient-linkedin">
+                        <div class="overlay"></div>
+                        <i class="fab fa-linkedin card-icon"></i>
                     </div>
-                </div>
-            </article>
+                    <div class="card-content">
+                        <h3>LinkedIn</h3>
+                        <p>Let's connect professionally</p>
+                        <div class="card-links">
+                            <a href="https://www.linkedin.com/in/hicham-oubbad-540a98327/" target="_blank"
+                                class="text-link">Connect <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-icon="fab fa-instagram" data-color="#5B0AEF">
+                    <div class="card-image bg-gradient-instagram">
+                        <div class="overlay"></div>
+                        <i class="fab fa-instagram card-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Instagram</h3>
+                        <p>My life outside the terminal</p>
+                        <div class="card-links">
+                            <a href="https://instagram.com/kl7sr" target="_blank" class="text-link">Profile <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
+    <!-- 7. FOOTER -->
     <footer class="footer">
-        <div class="footer-content">
+        <div class="section-container footer-content">
             <div class="footer-info">
                 <span class="footer-item">
                     <i class="fas fa-envelope"></i>
@@ -296,7 +310,7 @@
         </div>
     </footer>
 
-    <script src="script.js?v=2.7"></script>
+    <script src="script.js?v=7.0"></script>
 </body>
 
 </html>

@@ -417,14 +417,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         sections.forEach(sec => sectionObserver.observe(sec));
 
-        // Hover configuration for each chamber (icon and neon color)
+        // Hover configuration for each chamber (icon and deep violet accent)
         const chamberHoverConfig = [
-            { icon: 'fas fa-home', color: 'var(--accent-primary)' },
-            { icon: 'fas fa-user', color: 'var(--accent-secondary)' },
-            { icon: 'fas fa-file-alt', color: '#ff007f' },
-            { icon: 'fas fa-mobile-alt', color: '#3DDC84' },
-            { icon: 'fas fa-globe', color: '#ff003c' },
-            { icon: 'fas fa-share-alt', color: 'var(--accent-secondary)' }
+            { icon: 'fas fa-home', color: '#5B0AEF' },
+            { icon: 'fas fa-user', color: '#5B0AEF' },
+            { icon: 'fas fa-file-alt', color: '#5B0AEF' },
+            { icon: 'fas fa-mobile-alt', color: '#5B0AEF' },
+            { icon: 'fas fa-globe', color: '#5B0AEF' },
+            { icon: 'fas fa-share-alt', color: '#5B0AEF' }
         ];
 
 
