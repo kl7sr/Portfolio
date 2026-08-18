@@ -813,6 +813,7 @@ h1 {
    ========================================================================== */
 
 .rotary-nav {
+    display: none !important;
     position: fixed;
     right: -100px;
     top: 50%;
