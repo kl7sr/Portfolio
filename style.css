@@ -580,6 +580,62 @@ h1 {
     100% { transform: translateY(-250px) translateX(30px) scale(0.2); opacity: 0; }
 }
 
+/* Win Ntbara3 Widget (Algerian Emerald Green + Relief Emblem) */
+.bg-gradient-win-ntbara3 {
+    background: radial-gradient(circle at 50% 30%, #0F7A47 0%, #084D2C 65%, #042D19 100%) !important;
+    border-bottom: 2px solid #0F7A47 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.win-ntbara3-content-wrapper {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.win-ntbara3-logo {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.4));
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), filter 0.4s ease;
+}
+
+.project-card:hover .win-ntbara3-logo {
+    transform: scale(1.12) rotate(2deg);
+    filter: drop-shadow(0 0 20px rgba(15, 122, 71, 0.8)) drop-shadow(0 4px 14px rgba(0, 0, 0, 0.5));
+}
+
+.win-ntbara3-title-ar {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #FBF7EF;
+    font-family: 'Cairo', sans-serif;
+    letter-spacing: 0.5px;
+    background: rgba(15, 122, 71, 0.45);
+    border: 1px solid rgba(214, 169, 74, 0.4);
+    padding: 2px 14px;
+    border-radius: 20px;
+    direction: rtl;
+    transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover .win-ntbara3-title-ar {
+    transform: scale(1.06);
+    border-color: #D6A94A;
+    background: rgba(15, 122, 71, 0.75);
+    color: #FFFFFF;
+}
+
+.project-card:hover .fa-hand-holding-heart {
+    color: #0F7A47 !important;
+    filter: drop-shadow(0 0 15px rgba(15, 122, 71, 0.7));
+}
+
 /* Future App Widget (Android Green) */
 .project-card:hover .fa-android {
     color: #3DDC84 !important;
@@ -640,6 +696,74 @@ h1 {
 
 .project-card:hover .veins-background {
     opacity: 0.22;
+}
+
+/* L'Étoile QR Menu Widget (Luxury Obsidian & Warm Amber Gold) */
+.bg-gradient-menu {
+    background: radial-gradient(circle at 50% 35%, #2B231B 0%, #1A1612 60%, #0E0C0A 100%) !important;
+    border-bottom: 2px solid #C8963E !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-content-wrapper {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.etoile-star-badge {
+    font-size: 1.1rem;
+    color: #C8963E;
+    filter: drop-shadow(0 0 8px rgba(200, 150, 62, 0.6));
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.project-card:hover .etoile-star-badge {
+    transform: scale(1.25) rotate(72deg);
+    color: #F5D77F;
+}
+
+.etoile-glow {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #FAF6F0;
+    text-shadow: 0 0 15px rgba(200, 150, 62, 0.4);
+    letter-spacing: 1px;
+    transition: transform 0.4s ease, text-shadow 0.4s ease, color 0.4s ease;
+}
+
+.project-card:hover .etoile-glow {
+    transform: scale(1.08);
+    color: #FFFFFF;
+    text-shadow: 0 0 25px rgba(200, 150, 62, 0.8), 0 0 40px rgba(200, 150, 62, 0.4);
+}
+
+.etoile-tagline {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #C8963E;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    opacity: 0.9;
+    transition: opacity 0.3s ease, letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+.project-card:hover .etoile-tagline {
+    opacity: 1;
+    letter-spacing: 3px;
+    color: #F5D77F;
+}
+
+.project-card:hover .fa-utensils {
+    color: #C8963E !important;
+    filter: drop-shadow(0 0 15px rgba(200, 150, 62, 0.7));
 }
 
 /* Bookstore Widget (Cyan) */
